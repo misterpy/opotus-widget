@@ -1,15 +1,24 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "types": ["jest", "node"],
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "declarationDir": "dist/types",
     "declaration": true,
-    "strict": true,
-    "outDir": "./lib",
-    "esModuleInterop": true
+    "target": "es2015",
+    "module": "es2015",
+    "strict": true
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
