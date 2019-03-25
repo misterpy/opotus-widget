@@ -1,6 +1,6 @@
 {
   "name": "opotus-widget",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "an npm package that will allow easy implementation of the opotus dropins into your app or website.",
   "scripts": {
     "type-check": "tsc --noEmit",
