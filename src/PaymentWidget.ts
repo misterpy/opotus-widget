@@ -2,7 +2,7 @@ import { ITransactionPayload, IWidgetConfig } from "./constants";
 import { makeId } from "./utils";
 
 export class PaymentWidget {
-    private opotusUrl: string = "https://localhost:4288/compatibility";
+    private opotusUrl: string = "https://opotus.net/compatibility";
     private requiredQueryParameters: string[] = ["apiKey", "orderId", "amount", "callbackUrl"];
 
     private placeholderElement: any;
