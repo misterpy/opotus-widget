@@ -45,12 +45,13 @@ export class PaymentWidget {
     }
 
     private generateIFrameUrl(config: IWidgetConfig) {
-        return `${this.opotusUrl}?${this.encodeQueryData(config)}`;
+        const url = config.debugUrl || this.opotusUrl;
+        return `${url}?${this.encodeQueryData(config)}`;
     }
 
     private encodeQueryData(config: IWidgetConfig) {
         const parametersArray = this.requiredQueryParameters.map(key => {
-            if (key === "orderId") {
+            if (key === "amount") {
                 return `${key}=${this.getAmount(config.amount)}`;
             }
 

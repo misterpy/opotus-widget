@@ -1,6 +1,6 @@
 export interface IWidgetConfig {
+  debugUrl?: string;
   apiKey: string;
-  secretKey: string;
   callbackUrl: string;
   amount: number;
   orderId: string;
